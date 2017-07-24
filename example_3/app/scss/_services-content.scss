@@ -1,0 +1,29 @@
+
+.main-content .services-content .container {
+    padding-bottom: 2rem;
+    color: $white;
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            text-align: center;
+
+            h3 {
+                margin-top: 0;
+            }
+
+            a {
+                @extend .btn;
+            }
+        }
+    }
+}

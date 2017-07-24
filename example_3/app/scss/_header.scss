@@ -1,0 +1,63 @@
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: darken($blue, 20);
+
+    .container {
+        padding: {
+            top: 0.4rem;
+            bottom: 0.4rem;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include md {
+                flex-direction: row;
+            }
+
+            h2 {
+                margin: 0;
+                font-size: 2.2rem;
+            }
+
+            .menu {
+                width: 100%;
+
+                @include md {
+                    margin-left: auto;
+                    width: auto;
+                }
+
+                a {
+                    display: block;
+                    padding: 0.5rem 0;
+                    color: $white;
+                    text: {
+                        align: center;
+                        decoration: none;
+                    }
+
+                    &:not(:first-child) {
+                        border-top: 1px solid $white;
+                    }
+
+                    @include md {
+                        display: inline-block;
+                        padding: 0 0 0 0.5rem;
+                        border-top: none !important;
+                    }
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}

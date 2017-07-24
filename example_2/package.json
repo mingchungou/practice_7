@@ -1,0 +1,36 @@
+{
+  "name": "gulp_example_2",
+  "version": "1.0.0",
+  "description": "Practice about Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ming Chung Ou",
+  "license": "MIT",
+  "dependencies": {
+    "angular-scroll": "^1.0.2",
+    "animate.css": "^3.5.2",
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "github:fortawesome/Font-Awesome",
+    "jquery": "^3.2.1",
+    "owl.carousel": "github:owlcarousel2/OwlCarousel2",
+    "tether": "^1.4.0",
+    "wowjs": "github:matthieua/WOW"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^1.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-ng-template": "^0.2.3",
+    "gulp-remove-code": "^1.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.0.0"
+  }
+}

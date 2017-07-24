@@ -1,0 +1,29 @@
+
+.main-content .welcome-content {
+    @include backgroundImage("../assets/img/image02.jpg", 100vh, top center, fixed);
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: {
+            top: 15px;
+            bottom: 15px;
+        }
+        height: 100%;
+
+        h1 {
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+
+        p {
+            margin: {
+                top: 0;
+                bottom: 4rem;
+            }
+            color: $white;
+            font-size: 1.2rem;
+        }
+    }
+}

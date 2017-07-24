@@ -1,0 +1,98 @@
+
+.main-content .mixin-content .container {
+    padding: {
+        top: 15px;
+        bottom: 2rem;
+    }
+
+    .news-content {
+        h2 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .news {
+            .new {
+                color: $white;
+                overflow: hidden;
+
+                &:not(:first-child) {
+                    padding-top: 0.6rem;
+                    border-top: 1px dotted $white;
+                }
+
+                &:not(:last-child) {
+                    padding-bottom: 1.6rem;
+                }
+
+                img {
+                    float: left;
+                    padding: {
+                        right: 1rem;
+                        bottom: 0.6rem;
+                    }
+                }
+
+                h3 {
+                    margin: 0;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                div {
+                    clear: both;
+                    text-align: right;
+
+                    a {
+                        @extend .btn;
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar-content {
+        .museum-schedule-content table {
+            margin-top: 1rem;
+            width: 100%;
+            color: $white;
+            text-align: left;
+            border-collapse: collapse;
+
+            @include lg {
+                margin-top: 0.3rem;
+            }
+
+            caption {
+                text-align: left;
+                font: {
+                    size: 1.4rem;
+                    weight: bold;
+                }
+            }
+
+            th, td {
+                padding: 0.4rem;
+            }
+
+            thead {
+                background-color: darken($blue, 20);
+            }
+
+            tbody tr {
+                &:nth-child(even) {
+                    background-color: darken($blue, 10);
+                }
+
+                td {
+                    border-bottom: 1px solid darken($blue, 10);
+                }
+            }
+        }
+    }
+}

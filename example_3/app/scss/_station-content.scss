@@ -1,0 +1,19 @@
+
+.main-content .station-content {
+    @include backgroundImage("../assets/img/image03.jpg", 200px, top center);
+
+    .container {
+        display: flex;
+        align-items: flex-end;
+        padding: {
+            top: 15px;
+            bottom: 15px;
+        }
+        height: 100%;
+
+        h1 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+    }
+}

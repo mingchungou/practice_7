@@ -1,0 +1,45 @@
+$textColor: #111111 !default;
+$primaryColor: #12afaf !default;
+$primaryColorDark: #064e4e !default;
+$secondaryColor: #009500 !default;
+$secondaryColorDark: #057705 !default;
+$whiteColor: #ffffff !default;
+$grayColor: #8c8888 !default;
+
+%background-primary {
+    background-color: $primaryColor;
+    color: $whiteColor;
+}
+
+%background-secondary {
+    background-color: $secondaryColor;
+    color: $whiteColor;
+}
+
+@mixin position-fixed($top: null, $right: null, $bottom: null, $left: null) {
+    position: fixed;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin position-absolute($top: null, $right: null, $bottom: null, $left: null) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@keyframes arrow-down-animated {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NETWORK | Mobile solutions for companies</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <!-- removeIf(production) -->
+        <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css" />
+        <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <!-- endRemoveIf(production) -->
+
+        <link rel="stylesheet" href="css/styles.min.css" />
+    </head>
+    <body ng-controller="mainController as $ctrl">
+        <section class="main-content" ng-cloak>
+            <header class="main-header fixed-top"
+                role="banner"
+                ng-class="{'header-animated': animated}">
+                <div class="container">
+                    <app-navbar></app-navbar>
+                </div>
+            </header>
+            <section ng-view></section>
+            <footer class="main-footer py-3 text-center" role="contentinfo">
+                <div class="container">
+                    <p>2016 © NETWORK Todos los derechos reservados</p>
+                    <ul class="social-network-list">
+                        <li ng-repeat="social in $ctrl.socialNetworks">
+                            <a href="{{social.url}}" target="_blank">
+                                <i class="fa {{social.style}}" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+            <a class="go-top">
+                <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+            </a>
+        </section>
+
+        <!-- removeIf(production) -->
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/tether/dist/js/tether.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../node_modules/wowjs/dist/wow.min.js"></script>
+        <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="lib/angularjs/js/angular-1.5.min.js"></script>
+        <script src="lib/angularjs/js/angular-route.min.js"></script>
+        <script src="../node_modules/angular-scroll/angular-scroll.min.js"></script>
+        <script src="js/app.module.js"></script>
+        <script src="js/directives/render.directive.js"></script>
+        <script src="js/directives/img.directive.js"></script>
+        <script src="js/directives/start.directive.js"></script>
+        <script src="js/directives/wow.directive.js"></script>
+        <script src="js/directives/text.directive.js"></script>
+        <script src="js/app.controller.js"></script>
+        <script src="js/components/shared/navbar/navbar.component.js"></script>
+        <script src="js/components/shared/carousel/carousel.component.js"></script>
+        <script src="js/components/home/home.component.js"></script>
+        <script src="js/components/about/about.component.js"></script>
+        <script src="js/components/service/service.component.js"></script>
+        <script src="js/components/contact/contact.component.js"></script>
+        <!-- endRemoveIf(production) -->
+
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

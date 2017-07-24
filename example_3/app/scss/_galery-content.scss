@@ -1,0 +1,41 @@
+
+.main-content .galery-content .container {
+    padding: {
+        top: 15px;
+        bottom: 15px;
+    }
+    overflow: hidden;
+
+    @extend .clearfix;
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    li.image {
+        float: left;
+        list-style: none;
+
+        @include gridImages(2, 1%);
+
+        @include md {
+            @include gridImages(3, 1%);
+        }
+
+        @include lg {
+            @include gridImages(4, 1%);
+        }
+
+        @include xl {
+            @include gridImages(5, 1%);
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    }
+}

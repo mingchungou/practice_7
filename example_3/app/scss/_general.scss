@@ -1,0 +1,92 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    color: $main-color;
+    font: {
+        family: $main-font;
+        size: 1rem;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $title-color;
+    font-family: $title-font;
+}
+
+.container {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    padding: {
+        left: 15px;
+        right: 15px;
+    }
+    box-sizing: border-box;
+
+    @include sm {
+        width: 540px;
+    }
+
+    @include md {
+        width: 720px;
+    }
+
+    @include lg {
+        width: 960px;
+    }
+
+    @include xl {
+        width: 1140px;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    background-color: lighten($red, 5);
+    color: $white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: darken($red, 20);
+    }
+}
+
+.clearfix {
+    &::after {
+        clear: both;
+    }
+}
+
+.row {
+    margin: {
+        left: 0 - 0.5rem;
+        right: 0 - 0.5rem;
+    }
+    overflow: hidden;
+
+    @extend .clearfix;
+}
+
+[class*="col-"] {
+    float: left;
+    width: 100%;
+    padding: {
+        right: 0.5rem;
+        left: 0.5rem;
+    }
+    box-sizing: border-box;
+}
+
+@include lg {
+    @for $i from 1 through $columns {
+        .col-#{$i} {
+            width: 100% / $columns * $i;
+        }
+    }
+}
